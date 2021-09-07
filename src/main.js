@@ -1,14 +1,5 @@
-class Car {
-  constructor(brand, color) {
-    this.name = brand
-    this.color = color
-  }
-}
+import './assets/styles/main.scss'
 
-const bmw = new Car('BMW', 'red')
-const ford = new Car('Ford', 'blue')
+import './assets/js/module-a.js'
+import './assets/js/module-b.js'
 
-
-const root = document.getElementById('root')
-root.innerHTML = `<p>My new car is ${bmw.name} and the color is ${bmw.color}</p>`
-root.innerHTML += `<p>My new car is ${ford.name} and the color is ${ford.color}</p>`
