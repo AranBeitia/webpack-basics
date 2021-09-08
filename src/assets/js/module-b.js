@@ -1,9 +1,7 @@
-import 'jquery'
+$('#jquery').append('<button id="button">Click</button>')
 
-$('#root').append('<button id="button">Click</button>')
-
-const message = $('<p></p>')
+const message = $('<p class="text"></p>')
 $('#button').on('click', () => {
   message.text('hello jquery')
-  $('#root').after(message)
+  $('#button').after(message)
 })
